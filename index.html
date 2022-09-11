@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>snake Game with Omar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background: linear-gradient(to bottom, #04ffff, #36f770);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+      }
+      #game-board {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vmin;
+        height: 90vmin;
+        border: 2px solid rgb(255, 255, 255);
+        background: #0070ac;
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        grid-template-rows: repeat(21, 1fr);
+      }
+      .snake-body {
+        background-color: rgb(142, 255, 113);
+        border: 0.1vmin solid yellow;
+        border-radius: 1vmin;
+      }
+      .food {
+        background-color: rgb(255, 0, 0);
+        border: 0.1vmin solid white;
+        border-radius: 1vmin;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-board" class="game-board"></div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
